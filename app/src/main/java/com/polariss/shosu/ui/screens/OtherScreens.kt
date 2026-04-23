@@ -12,51 +12,6 @@ import androidx.compose.ui.res.painterResource
 import com.polariss.shosu.R
 
 @Composable
-fun MapScreen() {
-    Box(modifier = Modifier.fillMaxSize()) {
-        Image(
-            painter = painterResource(id = R.drawable.background),
-            contentDescription = null,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("地图界面 (建设中)")
-        }
-    }
-}
-
-@Composable
-fun RecordsScreen() {
-    Box(modifier = Modifier.fillMaxSize()) {
-        Image(
-            painter = painterResource(id = R.drawable.background),
-            contentDescription = null,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("笔记与规则界面 (建设中)")
-        }
-    }
-}
-
-@Composable
-fun LoreScreen() {
-    Box(modifier = Modifier.fillMaxSize()) {
-        Image(
-            painter = painterResource(id = R.drawable.background),
-            contentDescription = null,
-            modifier = Modifier.fillMaxSize(),
-            contentScale = ContentScale.Crop
-        )
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("魔女图鉴界面 (建设中)")
-        }
-    }
-}
-
-@Composable
 fun WardenConsoleScreen() {
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
@@ -70,4 +25,3 @@ fun WardenConsoleScreen() {
         }
     }
 }
-

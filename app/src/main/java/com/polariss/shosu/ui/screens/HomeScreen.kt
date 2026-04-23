@@ -35,10 +35,10 @@ fun HomeScreen(
     onSettingsClick: () -> Unit
 ) {
     val buttons = listOf(
-        HomeButtonInfo("魔女图鉴", Screen.Lore, iconResId = R.drawable.witch_catalog_icon),
-        HomeButtonInfo("处刑投票", Screen.Execution, iconResId = R.drawable.splash_logo),
-        HomeButtonInfo("好友", Screen.Warden, iconResId = R.drawable.friends_chat_icon), // Temporarily mapping Friends to Warden or just null
-        HomeButtonInfo("设置", null, iconResId = R.drawable.setting_icon, onClick = onSettingsClick)
+        HomeButtonInfo("", Screen.Lore, iconResId = R.drawable.witch_catalog_icon),
+        HomeButtonInfo("", Screen.Execution, iconResId = R.drawable.splash_logo),
+        HomeButtonInfo("", Screen.Warden, iconResId = R.drawable.friends_chat_icon), // Temporarily mapping Friends to Warden or just null
+        HomeButtonInfo("", null, iconResId = R.drawable.setting_icon, onClick = onSettingsClick)
     )
 
     Box(

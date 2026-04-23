@@ -21,9 +21,9 @@ fun ShosuNavHost(
                 onSettingsClick = onSettingsClick
             )
         }
-        composable(Screen.Map.route) { MapScreen() }
-        composable(Screen.Records.route) { RecordsScreen() }
-        composable(Screen.Lore.route) { LoreScreen() }
+        composable(Screen.Lore.route) { 
+            LoreScreen()
+        }
         composable(Screen.Execution.route) { ExecutionScreen() }
         composable(Screen.Warden.route) { WardenConsoleScreen() }
     }
