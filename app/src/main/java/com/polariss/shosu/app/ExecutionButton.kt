@@ -24,7 +24,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Paint
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.input.pointer.pointerInput
@@ -128,7 +127,7 @@ fun ExecutionButton(
             modifier = Modifier
                 .matchParentSize()
                 .drawBehind {
-                    val paint = Paint().asFrameworkPaint().apply {
+                    val paint = android.graphics.Paint().apply {
                         isAntiAlias = true
                         color = android.graphics.Color.BLACK
                         alpha = 200
